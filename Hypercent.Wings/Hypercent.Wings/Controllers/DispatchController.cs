@@ -352,7 +352,7 @@ namespace Hypercent.Wings.Controllers
                 Text = h.Name
             }).ToList();
 
-            helperSelectList.Insert(0, new SelectListItem { Value = string.Empty, Text = "Please Select", Selected = true });
+            helperSelectList.Insert(0, new SelectListItem { Value = "0", Text = "Please Select", Selected = true });
             return helperSelectList;
         }
 
