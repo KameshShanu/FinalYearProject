@@ -81,7 +81,7 @@
 
                 if (!String.IsNullOrEmpty(user.Password))
                 {
-                    var provider = new DpapiDataProtectionProvider("LeapRunner");
+                    var provider = new DpapiDataProtectionProvider("MyVehicleTracker");
                     UserManager.UserTokenProvider = new DataProtectorTokenProvider<ApplicationUser>(provider.Create("PasswordResetByAdmin"));
                     var code = UserManager.GeneratePasswordResetToken(id);
                     var result = UserManager.ResetPassword(id, code, user.Password);

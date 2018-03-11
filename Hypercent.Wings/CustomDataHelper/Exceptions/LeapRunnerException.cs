@@ -7,11 +7,11 @@ using System.Threading.Tasks;
 
 namespace CustomDataHelper.Exceptions
 {
-   public class LeapRunnerException: Exception
+   public class MyVehicleTrackerException: Exception
     {
-        public LeapRunnerException() { }
-        public LeapRunnerException(string message) : base(message) { }
-        public LeapRunnerException(string message, LeapRunnerException inner) : base(message, inner) { }
-        protected LeapRunnerException(SerializationInfo info, StreamingContext context) : base(info, context) { }
+        public MyVehicleTrackerException() { }
+        public MyVehicleTrackerException(string message) : base(message) { }
+        public MyVehicleTrackerException(string message, MyVehicleTrackerException inner) : base(message, inner) { }
+        protected MyVehicleTrackerException(SerializationInfo info, StreamingContext context) : base(info, context) { }
     }
 }
