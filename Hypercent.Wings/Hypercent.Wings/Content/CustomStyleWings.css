@@ -530,12 +530,12 @@ tbody tr:nth-child(odd) {
 
 .reporttitle {
     font-weight: 350;
-    font-size: 15px !important;
+    font-size: 19px !important;
     font-family: -apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,"Noto Sans",Ubuntu,"Droid Sans","Helvetica Neue",sans-serif;
-    color: #fff !important;
+    color: #a92a2a !important;
     text-align: center;
-    background-color:#a92a2a;
-    padding: 28px;
+    /*background-color:#a92a2a;*/
+    padding: 0px;
 }
 
 .label.label-success {
