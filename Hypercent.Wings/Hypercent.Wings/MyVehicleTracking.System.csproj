@@ -322,6 +322,8 @@
     <Content Include="Content\Images\4.PNG" />
     <Content Include="Content\Images\back.png" />
     <Content Include="Content\Images\back2.jpg" />
+    <Content Include="Content\Images\back3.jpg" />
+    <Content Include="Content\Images\backer.jpg" />
     <Content Include="Content\Images\backgroundimage.jpg" />
     <Content Include="Content\Images\loading.gif" />
     <Content Include="Content\Images\log.png" />
