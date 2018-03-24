@@ -435,7 +435,7 @@ body {
 }
 
 .tableTitle {
-    background-color: #6e1179;
+    background-color:#a92a2a;
     padding: 15px;
     font-size: 20px;
     margin-bottom: 20px;
@@ -762,7 +762,7 @@ a:focus, a:hover {
 }
 
 a {
-    color: #713e79 !important;
+    color:#a92a2a !important;
 }
 
 .maincontent {
@@ -793,7 +793,7 @@ th {
 .confirmation {
     font-family: -apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,"Noto Sans",Ubuntu,"Droid Sans","Helvetica Neue",sans-serif !important;
     padding: 40px;
-    color: #6e1179;
+    color: #a92a2a;
     background-color: #ffffff;
     font-weight: 400;
 }
@@ -810,9 +810,9 @@ h4 {
 /*Customize Pagination Style*/
 
 .pagination > .active > a {
-    background: #6e1179 !important;
+    background: #a92a2a !important;
     color: white !important;
-    border-color: #6e1179 !important;
+    border-color: #a92a2a !important;
 }
 
 /*Customize Table Style*/
@@ -926,7 +926,7 @@ input {
         }
 
             input[type="checkbox"]:checked:not(:disabled) {
-                background: #6e1179;
+                background: #a92a2a ;
             }
 
             /* checkbox checked */
@@ -956,7 +956,7 @@ input {
     position: fixed;
     top: 87px;
     right: 43%;
-    overflow: hidden;
+ 
     z-index: 40;
     border-top: 4px solid #6e1179;
 }
@@ -1037,7 +1037,7 @@ input {
 
     .nav-tabs > li.active {
         /*background: #6e1179;*/
-        border-top: 4px solid #6e1179;
+        border-top: 4px solid #a92a2a;
     }
 
         .nav-tabs > li.active > a:hover {
@@ -1059,7 +1059,7 @@ input {
 .nav-tabs .active a {
     background-color: transparent !important;
     border: none !important;
-    color: #6e1179 !important;
+    color: #a92a2a !important;
 }
 
 .pageTitle {
@@ -1129,7 +1129,7 @@ input {
 }
 
 .searchbtn {
-    background-color: #6e1179 !important;
+    background-color: #a92a2a !important;
     color: #fff !important;
     border-radius: 20px !important;
     width: 40px;
