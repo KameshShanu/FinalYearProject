@@ -93,6 +93,8 @@
     <Compile Include="Roles\IRoleRepository.cs" />
     <Compile Include="Roles\Role.cs" />
     <Compile Include="DTO\DailyVehiclePerformanceDto.cs" />
+    <Compile Include="TrackingDevice\ITrackingDeviceRepository.cs" />
+    <Compile Include="TrackingDevice\TrackingDevice.cs" />
     <Compile Include="Trips\ArchiveTrip.cs" />
     <Compile Include="Trips\ArchiveTripCommonDTO.cs" />
     <Compile Include="Trips\CustomBata.cs" />

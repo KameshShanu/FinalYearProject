@@ -165,6 +165,12 @@ namespace Domain.Vehicles
             set;
         }
 
+        public virtual IEnumerable<TrackingDevice.TrackingDevice> TrackingDevice
+        {
+            get;
+            set;
+        }
+
         //public virtual ICollection<Driver.Driver> Drivers
         //{
         //    get;

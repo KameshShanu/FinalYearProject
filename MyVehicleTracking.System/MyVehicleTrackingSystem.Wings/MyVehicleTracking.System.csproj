@@ -264,6 +264,7 @@
     <Compile Include="Models\InvoiceViewModel.cs" />
     <Compile Include="Models\ReportViewModel.cs" />
     <Compile Include="Models\SearchModel.cs" />
+    <Compile Include="Models\TrackingDeviceViewModel.cs" />
     <Compile Include="Models\TripCommonViewModel.cs" />
     <Compile Include="Models\TripPackageViewModel.cs" />
     <Compile Include="Models\TripViewModel.cs" />

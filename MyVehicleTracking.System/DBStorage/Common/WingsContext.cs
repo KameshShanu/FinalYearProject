@@ -25,6 +25,7 @@
     using System.Threading;
     using Domain.Invoice;
     using Domain.InvoiceDispatchNote;
+    using Domain.TrackingDevice;
 
     /// <summary>
     /// ProjectXContext class.
@@ -181,6 +182,11 @@
             set;
         }
 
+        public DbSet<TrackingDevice> TrackingDevice
+        {
+            get;
+            set;
+        }
         /// <summary>
         /// Initializes a new instance of the <see cref="WingsContext" /> class.
         /// </summary>
