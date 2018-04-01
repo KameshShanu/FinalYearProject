@@ -722,14 +722,14 @@ a:hover {
     margin-left: -30px;
     width: 91px;
     padding: 25px;
-    background-color: #713e79;
+    background-color: #e0e0e0;
     height: 80px;
     margin-top: -94px;
     text-align: center;
 }
 
 .notification {
-    color: #713e79;
+    color: #e0e0e0;
     display: inline-block; /* Inline elements with width and height. TL;DR they make the icon buttons stack from left-to-right instead of top-to-bottom */
     position: relative; /* All 'absolute'ly positioned elements are relative to this one */
     padding: 2px 5px;
