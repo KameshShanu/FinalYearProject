@@ -430,7 +430,7 @@ body {
     }
 
 .formtitle {
-    background-color:#8c8c8c;
+    background-color:#a92a31;
     /*border-radius: 28px;*/
 }
 
@@ -712,7 +712,7 @@ a:hover {
 }
 
 .subpanel {
-    background-color:#bab7af;
+    background-color:#a92a31;
     padding: 55px;
     border: 5px solid #ffffff;
     border-radius: 13px;
