@@ -18,7 +18,9 @@
             color:#6e1179 !important;
             font-size:25px;
         }      
-        .logtitle{    
+        .logtitle{  
+            margin-left: -31px;
+            width: 510px;  
             color: #fff;
             margin-top: -64px;
             padding: 45px;
