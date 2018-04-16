@@ -14,7 +14,7 @@ namespace MyVehicleTracking.System.Models
             set;
         }
 
-        public int DeviceId
+        public string DeviceId
         {
             get;
             set;

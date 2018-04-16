@@ -15,7 +15,7 @@ namespace Domain.TrackingDevice
             set;
         }
 
-        public int DeviceId
+        public string DeviceId
         {
             get;
             set;
