@@ -14,6 +14,12 @@ namespace MyVehicleTracking.System.Models
             set;
         }
 
+        public int DeviceId
+        {
+            get;
+            set;
+        }
+
         [DisplayName("Massage")]
         public string MassageType
         {

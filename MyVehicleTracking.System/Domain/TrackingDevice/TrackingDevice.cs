@@ -15,6 +15,12 @@ namespace Domain.TrackingDevice
             set;
         }
 
+        public int DeviceId
+        {
+            get;
+            set;
+        }
+
         public string MassageType
         {
             get;
