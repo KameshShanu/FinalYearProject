@@ -1,6 +1,7 @@
 ﻿using Domin.Common;
 using System;
 using System.Collections.Generic;
+using System.ComponentModel.DataAnnotations.Schema;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
@@ -15,91 +16,86 @@ namespace Domain.TrackingDevice
             set;
         }
 
-        public string DeviceId
+        public string device_Id
         {
             get;
             set;
         }
 
-        public string MassageType
+        public string massage_type
         {
             get;
             set;
         }
 
-        public char Imei
+        public string imei
         {
             get;
             set;
         }
 
-        public DateTime DeviceDate
+        [DatabaseGenerated(DatabaseGeneratedOption.Computed)]
+        public DateTime? date
+        {
+            get;
+            set;
+        }       
+
+        public string GPS_flag
         {
             get;
             set;
         }
 
-        public string GPSflag
+        public double Latitude
         {
             get;
             set;
         }
 
-        public decimal Latitude
+        public string Latitude_hemisphere
         {
             get;
             set;
         }
 
-        public string LatitudeHemisphere
+        public double Longitude
         {
             get;
             set;
         }
 
-        public decimal Longitude    
+        public string Longitude_hemisphere
         {
             get;
             set;
         }
 
-        public string LongitudeHemisphere
+        public double Ground_speed
         {
             get;
             set;
         }
 
-        public decimal GroundSpeed
+        public double Vehicle_angal
         {
             get;
             set;
         }
 
-        public DateTime Time
+        public string input_output
         {
             get;
             set;
         }
 
-        public decimal VehicleAngal
+        public string mileage_identify
         {
             get;
             set;
         }
 
-        public string InputOrOutput
-        {
-            get;
-            set;
-        }
-
-        public string MileageIdentify
-        {
-            get;
-            set;
-        }
-
-        public string Mileage
+        public string mileage
         {
             get;
             set;

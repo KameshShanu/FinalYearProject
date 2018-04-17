@@ -1,6 +1,7 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.ComponentModel;
+using System.ComponentModel.DataAnnotations.Schema;
 using System.Linq;
 using System.Web;
 
@@ -14,99 +15,93 @@ namespace MyVehicleTracking.System.Models
             set;
         }
 
-        public string DeviceId
+        public string device_Id
         {
             get;
             set;
         }
 
         [DisplayName("Massage")]
-        public string MassageType
+        public string massage_type
         {
             get;
             set;
         }
 
         [DisplayName("imei")]
-        public char Imei
+        public string imei
         {
             get;
             set;
         }
 
         [DisplayName("Date")]
-        public DateTime DeviceDate
+        [DatabaseGenerated(DatabaseGeneratedOption.Computed)]
+        public DateTime? date
         {
             get;
             set;
         }
        
-        public string GPSflag
+        public string GPS_flag
         {
             get;
             set;
         }
 
         [DisplayName("Latitude")]
-        public decimal Latitude
+        public double Latitude
         {
             get;
             set;
         }
 
-        public string LatitudeHemisphere
+        public string Latitude_hemisphere
         {
             get;
             set;
         }
 
         [DisplayName("Longitude")]
-        public decimal Longitude
+        public double Longitude
         {
             get;
             set;
         }
 
-        public string LongitudeHemisphere
+        public string Longitude_hemisphere
         {
             get;
             set;
         }
 
         [DisplayName("Speed")]
-        public decimal GroundSpeed
+        public double Ground_speed
         {
             get;
             set;
         }
 
-        [DisplayName("Time")]
-        public DateTime Time
+        public double Vehicle_angal
         {
             get;
             set;
         }
 
-        public decimal VehicleAngal
+        public string input_output
         {
             get;
             set;
         }
 
-        public string InputOrOutput
-        {
-            get;
-            set;
-        }
-
-        public string MileageIdentify
+        public string mileage_identify
         {
             get;
             set;
         }
 
         [DisplayName("Mileage")]
-        public string Mileage
+        public string mileage
         {
             get;
             set;

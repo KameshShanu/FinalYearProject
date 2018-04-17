@@ -7,13 +7,13 @@ namespace DBStorage.Migrations
     using System.Resources;
     
     [GeneratedCode("EntityFramework.Migrations", "6.1.3-40302")]
-    public sealed partial class AddedSomecolumnsdataTypeToStringontrackingdevice : IMigrationMetadata
+    public sealed partial class AddedNewTrackingDeviceTable : IMigrationMetadata
     {
-        private readonly ResourceManager Resources = new ResourceManager(typeof(AddedSomecolumnsdataTypeToStringontrackingdevice));
+        private readonly ResourceManager Resources = new ResourceManager(typeof(AddedNewTrackingDeviceTable));
         
         string IMigrationMetadata.Id
         {
-            get { return "201804161358420_AddedSomecolumnsdataTypeToStringontrackingdevice"; }
+            get { return "201804170854284_AddedNewTrackingDeviceTable"; }
         }
         
         string IMigrationMetadata.Source

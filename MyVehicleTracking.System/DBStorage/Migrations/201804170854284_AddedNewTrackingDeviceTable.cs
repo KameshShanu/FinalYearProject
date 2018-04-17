@@ -3,7 +3,7 @@ namespace DBStorage.Migrations
     using System;
     using System.Data.Entity.Migrations;
     
-    public partial class CreateTrackingDeviceTable : DbMigration
+    public partial class AddedNewTrackingDeviceTable : DbMigration
     {
         public override void Up()
         {
@@ -12,20 +12,20 @@ namespace DBStorage.Migrations
                 c => new
                     {
                         TrackingDeviceId = c.Int(nullable: false, identity: true),
-                        MassageType = c.String(),
-                        Imei = c.String(),
-                        DeviceDate = c.DateTime(nullable: false),
-                        GPSflag = c.String(),
-                        Latitude = c.Decimal(nullable: false, precision: 18, scale: 2),
-                        LatitudeHemisphere = c.String(),
-                        Longitude = c.Decimal(nullable: false, precision: 18, scale: 2),
-                        LongitudeHemisphere = c.String(),
-                        GroundSpeed = c.Decimal(nullable: false, precision: 18, scale: 2),
-                        Time = c.DateTime(nullable: false),
-                        VehicleAngal = c.Decimal(nullable: false, precision: 18, scale: 2),
-                        InputOrOutput = c.Decimal(nullable: false, precision: 18, scale: 2),
-                        MileageIdentify = c.String(),
-                        Mileage = c.Decimal(nullable: false, precision: 18, scale: 2),
+                        device_Id = c.String(),
+                        massage_type = c.String(),
+                        imei = c.String(),
+                        date = c.DateTime(),
+                        GPS_flag = c.String(),
+                        Latitude = c.Double(nullable: false),
+                        Latitude_hemisphere = c.String(),
+                        Longitude = c.Double(nullable: false),
+                        Longitude_hemisphere = c.String(),
+                        Ground_speed = c.Double(nullable: false),
+                        Vehicle_angal = c.Double(nullable: false),
+                        input_output = c.String(),
+                        mileage_identify = c.String(),
+                        mileage = c.String(),
                         IsDeleted = c.Boolean(nullable: false),
                         IsAvailable = c.Boolean(nullable: false),
                         Created = c.DateTime(nullable: false),

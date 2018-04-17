@@ -46,20 +46,19 @@ namespace DBStorage.TrackingDevice
             Domain.TrackingDevice.TrackingDevice trackingDeviceFromdb = RetrieveByKey(TrackingDevice.TrackingDeviceId);
             if (trackingDeviceFromdb != null)
             {
-                trackingDeviceFromdb.MassageType = TrackingDevice.MassageType;
-                trackingDeviceFromdb.Imei = TrackingDevice.Imei;
-                trackingDeviceFromdb.DeviceDate = TrackingDevice.DeviceDate;
-                trackingDeviceFromdb.GPSflag = TrackingDevice.GPSflag;
+                trackingDeviceFromdb.massage_type = TrackingDevice.massage_type;
+                trackingDeviceFromdb.imei = TrackingDevice.imei;
+                trackingDeviceFromdb.date = TrackingDevice.date;
+                trackingDeviceFromdb.GPS_flag = TrackingDevice.GPS_flag;
                 trackingDeviceFromdb.Latitude = TrackingDevice.Latitude;
-                trackingDeviceFromdb.LatitudeHemisphere = TrackingDevice.LatitudeHemisphere;
+                trackingDeviceFromdb.Latitude_hemisphere = TrackingDevice.Latitude_hemisphere;
                 trackingDeviceFromdb.Longitude = TrackingDevice.Longitude;
-                trackingDeviceFromdb.LongitudeHemisphere = TrackingDevice.LongitudeHemisphere;
-                trackingDeviceFromdb.GroundSpeed = TrackingDevice.GroundSpeed;
-                trackingDeviceFromdb.Time = TrackingDevice.Time;
-                trackingDeviceFromdb.VehicleAngal = TrackingDevice.VehicleAngal;
-                trackingDeviceFromdb.InputOrOutput = TrackingDevice.InputOrOutput;
-                trackingDeviceFromdb.MileageIdentify = TrackingDevice.MileageIdentify;
-                trackingDeviceFromdb.Mileage = TrackingDevice.Mileage;
+                trackingDeviceFromdb.Longitude_hemisphere = TrackingDevice.Longitude_hemisphere;
+                trackingDeviceFromdb.Ground_speed = TrackingDevice.Ground_speed;
+                trackingDeviceFromdb.Vehicle_angal = TrackingDevice.Vehicle_angal;
+                trackingDeviceFromdb.input_output = TrackingDevice.input_output;
+                trackingDeviceFromdb.mileage_identify = TrackingDevice.mileage_identify;
+                trackingDeviceFromdb.mileage = TrackingDevice.mileage;
                 trackingDeviceFromdb.IsAvailable = TrackingDevice.IsAvailable;
                 Save(trackingDeviceFromdb);
             }
