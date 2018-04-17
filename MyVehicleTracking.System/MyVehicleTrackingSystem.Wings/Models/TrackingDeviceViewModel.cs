@@ -28,7 +28,7 @@ namespace MyVehicleTracking.System.Models
         }
 
         [DisplayName("imei")]
-        public string Imei
+        public char Imei
         {
             get;
             set;
@@ -93,7 +93,7 @@ namespace MyVehicleTracking.System.Models
             set;
         }
 
-        public decimal InputOrOutput
+        public string InputOrOutput
         {
             get;
             set;
@@ -106,7 +106,7 @@ namespace MyVehicleTracking.System.Models
         }
 
         [DisplayName("Mileage")]
-        public decimal Mileage
+        public string Mileage
         {
             get;
             set;

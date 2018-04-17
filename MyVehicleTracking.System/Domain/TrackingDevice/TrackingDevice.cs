@@ -27,7 +27,7 @@ namespace Domain.TrackingDevice
             set;
         }
 
-        public string Imei
+        public char Imei
         {
             get;
             set;
@@ -87,7 +87,7 @@ namespace Domain.TrackingDevice
             set;
         }
 
-        public decimal InputOrOutput
+        public string InputOrOutput
         {
             get;
             set;
@@ -99,7 +99,7 @@ namespace Domain.TrackingDevice
             set;
         }
 
-        public decimal Mileage
+        public string Mileage
         {
             get;
             set;

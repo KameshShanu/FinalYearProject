@@ -300,6 +300,18 @@
     <Compile Include="Migrations\201804161350227_AddedDeviceIdToTrackingDeviceTable.Designer.cs">
       <DependentUpon>201804161350227_AddedDeviceIdToTrackingDeviceTable.cs</DependentUpon>
     </Compile>
+    <Compile Include="Migrations\201804161358420_AddedSomecolumnsdataTypeToStringontrackingdevice.cs" />
+    <Compile Include="Migrations\201804161358420_AddedSomecolumnsdataTypeToStringontrackingdevice.Designer.cs">
+      <DependentUpon>201804161358420_AddedSomecolumnsdataTypeToStringontrackingdevice.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\201804170329056_AddedImeiColumnDataTypeToINT.cs" />
+    <Compile Include="Migrations\201804170329056_AddedImeiColumnDataTypeToINT.Designer.cs">
+      <DependentUpon>201804170329056_AddedImeiColumnDataTypeToINT.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\201804170522597_AddedImeiColumnDtatTypeToChar.cs" />
+    <Compile Include="Migrations\201804170522597_AddedImeiColumnDtatTypeToChar.Designer.cs">
+      <DependentUpon>201804170522597_AddedImeiColumnDtatTypeToChar.cs</DependentUpon>
+    </Compile>
     <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Common\WingsContext.cs" />
@@ -466,6 +478,15 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Migrations\201804161350227_AddedDeviceIdToTrackingDeviceTable.resx">
       <DependentUpon>201804161350227_AddedDeviceIdToTrackingDeviceTable.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201804161358420_AddedSomecolumnsdataTypeToStringontrackingdevice.resx">
+      <DependentUpon>201804161358420_AddedSomecolumnsdataTypeToStringontrackingdevice.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201804170329056_AddedImeiColumnDataTypeToINT.resx">
+      <DependentUpon>201804170329056_AddedImeiColumnDataTypeToINT.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201804170522597_AddedImeiColumnDtatTypeToChar.resx">
+      <DependentUpon>201804170522597_AddedImeiColumnDtatTypeToChar.cs</DependentUpon>
     </EmbeddedResource>
   </ItemGroup>
   <ItemGroup />
