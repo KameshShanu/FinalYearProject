@@ -14,11 +14,10 @@ namespace ProjectX.App_Start
     using Domain.DTO;
     using Domain.Helper;
     using Domain.Invoice;
-    using Domain.TrackingDevice;
+    using Domain.NewTrackingDevice;
     using Domain.Trips;
     using Domain.Users;
-    using Domain.VehicleMaintenance;
-    using MyVehicleTracking.System.Models;
+    using Domain.VehicleMaintenance;    
     using MyVehicleTrackingSystem.Wings.Models;
 
     /// <summary>
@@ -107,7 +106,7 @@ namespace ProjectX.App_Start
                 cfg.CreateMap<VehicleMaintenanceViewModel, VehicleMaintenance>();
                 cfg.CreateMap<DispatchNoteViewModel, DispatchNote>().ReverseMap();
                 cfg.CreateMap<InvoiceViewModel, Invoice>().ReverseMap();
-                cfg.CreateMap<TrackingDeviceViewModel, TrackingDevice>().ReverseMap();
+                cfg.CreateMap<NewTrackingDeviceModel, NewTrackingDevice>().ReverseMap();
             });
         }
     }

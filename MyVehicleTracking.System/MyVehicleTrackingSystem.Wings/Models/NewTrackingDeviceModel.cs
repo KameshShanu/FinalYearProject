@@ -1,13 +1,11 @@
 ﻿using System;
 using System.Collections.Generic;
-using System.ComponentModel;
-using System.ComponentModel.DataAnnotations.Schema;
 using System.Linq;
 using System.Web;
 
-namespace MyVehicleTracking.System.Models
+namespace MyVehicleTrackingSystem.Wings.Models
 {
-    public class TrackingDeviceViewModel
+    public class NewTrackingDeviceModel
     {
         public int TrackingDeviceId
         {
@@ -21,35 +19,30 @@ namespace MyVehicleTracking.System.Models
             set;
         }
 
-        [DisplayName("Massage")]
         public string massage_type
         {
             get;
             set;
         }
 
-        [DisplayName("imei")]
         public string imei
         {
             get;
             set;
         }
 
-        [DisplayName("Date")]
-        [DatabaseGenerated(DatabaseGeneratedOption.Computed)]
         public DateTime? date
         {
             get;
             set;
         }
-       
+
         public string GPS_flag
         {
             get;
             set;
         }
 
-        [DisplayName("Latitude")]
         public double Latitude
         {
             get;
@@ -62,7 +55,6 @@ namespace MyVehicleTracking.System.Models
             set;
         }
 
-        [DisplayName("Longitude")]
         public double Longitude
         {
             get;
@@ -75,7 +67,6 @@ namespace MyVehicleTracking.System.Models
             set;
         }
 
-        [DisplayName("Speed")]
         public double Ground_speed
         {
             get;
@@ -100,23 +91,10 @@ namespace MyVehicleTracking.System.Models
             set;
         }
 
-        [DisplayName("Mileage")]
         public string mileage
         {
             get;
             set;
         }
-
-        public bool IsDeleted
-        {
-            get;
-            set;
-        }
-
-        public bool IsAvailable
-        {
-            get;
-            set;
-        }      
     }
 }

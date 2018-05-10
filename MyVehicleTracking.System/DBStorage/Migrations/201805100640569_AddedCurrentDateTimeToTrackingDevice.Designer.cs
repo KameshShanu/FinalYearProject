@@ -7,13 +7,13 @@ namespace DBStorage.Migrations
     using System.Resources;
     
     [GeneratedCode("EntityFramework.Migrations", "6.1.3-40302")]
-    public sealed partial class AddedNewTrackingDeviceTable : IMigrationMetadata
+    public sealed partial class AddedCurrentDateTimeToTrackingDevice : IMigrationMetadata
     {
-        private readonly ResourceManager Resources = new ResourceManager(typeof(AddedNewTrackingDeviceTable));
+        private readonly ResourceManager Resources = new ResourceManager(typeof(AddedCurrentDateTimeToTrackingDevice));
         
         string IMigrationMetadata.Id
         {
-            get { return "201804170854284_AddedNewTrackingDeviceTable"; }
+            get { return "201805100640569_AddedCurrentDateTimeToTrackingDevice"; }
         }
         
         string IMigrationMetadata.Source

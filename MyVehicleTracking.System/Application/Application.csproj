@@ -70,6 +70,8 @@
     <Compile Include="Helper\IHelperService.cs" />
     <Compile Include="Invoice\IInvoiceService.cs" />
     <Compile Include="Invoice\InvoiceService.cs" />
+    <Compile Include="NewTrackingDevice\INewTrackingDeviceService.cs" />
+    <Compile Include="NewTrackingDevice\NewTrackingDeviceService.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Roles\IRoleService.cs" />
     <Compile Include="Roles\RoleService.cs" />

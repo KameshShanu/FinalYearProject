@@ -1,15 +1,17 @@
 ﻿using Domin.Common;
 using System;
 using System.Collections.Generic;
+using System.ComponentModel.DataAnnotations;
 using System.ComponentModel.DataAnnotations.Schema;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace Domain.TrackingDevice
+namespace Domain.NewTrackingDevice
 {
-    public class TrackingDevice : BaseEntity
+    public class NewTrackingDevice : BaseEntity
     {
+        [Key]
         public int TrackingDeviceId
         {
             get;
@@ -34,11 +36,17 @@ namespace Domain.TrackingDevice
             set;
         }
 
-        [DatabaseGenerated(DatabaseGeneratedOption.Computed)]
+        //[Required, DatabaseGenerated(DatabaseGeneratedOption.Computed)]
         public DateTime? date
         {
-            get;
-            set;
+            get
+            {
+                return this.date.HasValue
+                   ? this.date.Value
+                   : DateTime.Now;
+            }
+
+            set { this.date = value; }
         }       
 
         public string GPS_flag
@@ -96,24 +104,6 @@ namespace Domain.TrackingDevice
         }
 
         public string mileage
-        {
-            get;
-            set;
-        }
-
-        public bool IsDeleted
-        {
-            get;
-            set;
-        }
-
-        public bool IsAvailable
-        {
-            get;
-            set;
-        }
-
-        public virtual Vehicles.Vehicle Vehicle
         {
             get;
             set;

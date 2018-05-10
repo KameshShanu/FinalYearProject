@@ -8,14 +8,14 @@ namespace DBStorage.Migrations
         public override void Up()
         {
             CreateTable(
-                "dbo.TrackingDevice",
+                "dbo.NewTrackingDevice",
                 c => new
                     {
                         TrackingDeviceId = c.Int(nullable: false, identity: true),
                         device_Id = c.String(),
                         massage_type = c.String(),
                         imei = c.String(),
-                        date = c.DateTime(),
+                        date = c.DateTime(nullable: false),
                         GPS_flag = c.String(),
                         Latitude = c.Double(nullable: false),
                         Latitude_hemisphere = c.String(),
@@ -26,23 +26,16 @@ namespace DBStorage.Migrations
                         input_output = c.String(),
                         mileage_identify = c.String(),
                         mileage = c.String(),
-                        IsDeleted = c.Boolean(nullable: false),
-                        IsAvailable = c.Boolean(nullable: false),
                         Created = c.DateTime(nullable: false),
                         Modified = c.DateTime(nullable: false),
-                        Vehicle_VehicleId = c.Int(),
                     })
-                .PrimaryKey(t => t.TrackingDeviceId)
-                .ForeignKey("dbo.Vehicle", t => t.Vehicle_VehicleId)
-                .Index(t => t.Vehicle_VehicleId);
+                .PrimaryKey(t => t.TrackingDeviceId);
             
         }
         
         public override void Down()
         {
-            DropForeignKey("dbo.TrackingDevice", "Vehicle_VehicleId", "dbo.Vehicle");
-            DropIndex("dbo.TrackingDevice", new[] { "Vehicle_VehicleId" });
-            DropTable("dbo.TrackingDevice");
+            DropTable("dbo.NewTrackingDevice");
         }
     }
 }
