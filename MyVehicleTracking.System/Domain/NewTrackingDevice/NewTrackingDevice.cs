@@ -39,15 +39,9 @@ namespace Domain.NewTrackingDevice
         //[Required, DatabaseGenerated(DatabaseGeneratedOption.Computed)]
         public DateTime? date
         {
-            get
-            {
-                return this.date.HasValue
-                   ? this.date.Value
-                   : DateTime.Now;
-            }
-
-            set { this.date = value; }
-        }       
+            get;
+            set;
+        }
 
         public string GPS_flag
         {

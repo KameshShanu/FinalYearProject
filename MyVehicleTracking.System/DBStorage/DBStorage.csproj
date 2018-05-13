@@ -296,10 +296,6 @@
     <Compile Include="Migrations\201805081707380_AddedNewTrackingDeviceTable.Designer.cs">
       <DependentUpon>201805081707380_AddedNewTrackingDeviceTable.cs</DependentUpon>
     </Compile>
-    <Compile Include="Migrations\201805131537056_AddedNowDatetimeToNewTrackingDevice.cs" />
-    <Compile Include="Migrations\201805131537056_AddedNowDatetimeToNewTrackingDevice.Designer.cs">
-      <DependentUpon>201805131537056_AddedNowDatetimeToNewTrackingDevice.cs</DependentUpon>
-    </Compile>
     <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Common\WingsContext.cs" />
@@ -463,9 +459,6 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Migrations\201805081707380_AddedNewTrackingDeviceTable.resx">
       <DependentUpon>201805081707380_AddedNewTrackingDeviceTable.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="Migrations\201805131537056_AddedNowDatetimeToNewTrackingDevice.resx">
-      <DependentUpon>201805131537056_AddedNowDatetimeToNewTrackingDevice.cs</DependentUpon>
     </EmbeddedResource>
   </ItemGroup>
   <ItemGroup />
