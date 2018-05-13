@@ -753,7 +753,7 @@ a:hover {
 .modal-header {
     font-family: -apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,"Noto Sans",Ubuntu,"Droid Sans","Helvetica Neue",sans-serif !important;
     color: #fff;
-    background-color: #5f3466;
+    background-color: #90242a;
     padding: 20px !important;
 }
 
@@ -1100,10 +1100,11 @@ input {
 
 #clientModalElement, #companyAddressModalElement, #vehicleLicensePlateNumberModalElement, #quantityModalElement, #vehicleDeliveryTypeModalElement, #driverModalElement, #helperModalElement, #dispatchDateModalElement {
     margin-top: 23px;
+    color: #040404;
 }
 
 .printModal .modal-content {
-    border: 2px solid #6e1179;
+    border: 2px solid #90242a;
 }
 
 .checkdiv {

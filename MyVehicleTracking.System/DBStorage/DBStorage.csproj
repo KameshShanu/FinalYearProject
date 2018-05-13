@@ -296,9 +296,9 @@
     <Compile Include="Migrations\201805081707380_AddedNewTrackingDeviceTable.Designer.cs">
       <DependentUpon>201805081707380_AddedNewTrackingDeviceTable.cs</DependentUpon>
     </Compile>
-    <Compile Include="Migrations\201805101743281_AddedCurrentDateTimeToNewTrackingDeviceTable.cs" />
-    <Compile Include="Migrations\201805101743281_AddedCurrentDateTimeToNewTrackingDeviceTable.Designer.cs">
-      <DependentUpon>201805101743281_AddedCurrentDateTimeToNewTrackingDeviceTable.cs</DependentUpon>
+    <Compile Include="Migrations\201805131537056_AddedNowDatetimeToNewTrackingDevice.cs" />
+    <Compile Include="Migrations\201805131537056_AddedNowDatetimeToNewTrackingDevice.Designer.cs">
+      <DependentUpon>201805131537056_AddedNowDatetimeToNewTrackingDevice.cs</DependentUpon>
     </Compile>
     <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
@@ -464,8 +464,8 @@
     <EmbeddedResource Include="Migrations\201805081707380_AddedNewTrackingDeviceTable.resx">
       <DependentUpon>201805081707380_AddedNewTrackingDeviceTable.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Migrations\201805101743281_AddedCurrentDateTimeToNewTrackingDeviceTable.resx">
-      <DependentUpon>201805101743281_AddedCurrentDateTimeToNewTrackingDeviceTable.cs</DependentUpon>
+    <EmbeddedResource Include="Migrations\201805131537056_AddedNowDatetimeToNewTrackingDevice.resx">
+      <DependentUpon>201805131537056_AddedNowDatetimeToNewTrackingDevice.cs</DependentUpon>
     </EmbeddedResource>
   </ItemGroup>
   <ItemGroup />
