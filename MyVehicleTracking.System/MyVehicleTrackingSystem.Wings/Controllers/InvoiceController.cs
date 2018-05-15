@@ -26,11 +26,13 @@ namespace MyVehicleTrackingSystem.Wings.Controllers
 
         // GET: Invoice
         public ActionResult Open()
+
         {
             IEnumerable<NewTrackingDeviceModel> newTrackingDeviceModel = new Collection<NewTrackingDeviceModel>();
             string markers = "[";
             string conString = ConfigurationManager.ConnectionStrings["WingsContext"].ConnectionString;
-            SqlCommand cmd = new SqlCommand("SELECT TOP 1 *  FROM NewTrackingDevice ORDER BY [TrackingDeviceId] DESC;");
+            //SqlCommand cmd = new SqlCommand("SELECT TOP 2 *  FROM NewTrackingDevice ORDER BY [TrackingDeviceId] DESC");
+            SqlCommand cmd = new SqlCommand("SELECT * FROM [NewTrackingDevice] WHERE [TrackingDeviceId] IN (SELECT TOP 1 MIN([TrackingDeviceId]) ids FROM [NewTrackingDevice] UNION ALL SELECT TOP 1 MAX([TrackingDeviceId]) ids FROM [NewTrackingDevice])");
             using (SqlConnection con = new SqlConnection(conString))
             {
                 cmd.Connection = con;
@@ -55,5 +57,6 @@ namespace MyVehicleTrackingSystem.Wings.Controllers
             ViewBag.Markers = markers;
             return View();
         }
+
     }
 }
