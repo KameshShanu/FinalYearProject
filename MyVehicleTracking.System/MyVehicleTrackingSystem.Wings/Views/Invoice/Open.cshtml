@@ -140,6 +140,7 @@
         <select hidden="hidden" id="end">
             <option value="">Kandy</option>
         </select>
+        <img hidden="hidden" id="carlogo" src="~/Content/Images/car_icon.png"/>
     </div>
     <div id="map" style="width:1520px;height:700px"></div>
 
@@ -150,6 +151,11 @@
         var locdata = markers;
         var original_location = locdata[0].lat+","+locdata[0].lng;
         var destination_location = locdata[1].lat+","+locdata[1].lng;
+        //var locations = [
+        //['Sacramento', 38.5815719, -121.4943996,'~\Content\Images\car_icon.png'],
+            
+        //];
+
 
         window.onload = function(){
 
@@ -174,26 +180,29 @@
             var directionsDisplay = new google.maps.DirectionsRenderer;
 
             var map = new google.maps.Map(document.getElementById('map'), {
-                center: new google.maps.LatLng(markers[0].lat, markers[0].lng),
-                zoom: 8,
+                center: new google.maps.LatLng(markers[1].lat, markers[1].lng),
+                zoom: 13,
                 mapTypeId: google.maps.MapTypeId.ROADMAP
             });
 
-            for (i = 0; i < markers.length; i++) {
-                var data = markers[i]
+            //for (i = 0; i < markers.length; i++) {
+                var carlogo = document.getElementById('carlogo').src;
+                var data = markers[1]
                 var myLatlng = new google.maps.LatLng(data.lat, data.lng);
                 var marker = new google.maps.Marker({
                     position: myLatlng,
                     map: map,
-                    title: data.title
+                    title: data.title,
+                    icon: carlogo
                 });
                 (function (marker, data) {
                     google.maps.event.addListener(marker, "click", function (e) {
-                        infowindow.setContent(data.description);
+                        infowindow.setContent('Ground Speed:' +data.Ground_speed+ '</br> Vehicle Angal:' +data.Vehicle_angal+ '</br> Latitude:' +data.lat+ '</br> Longitude:' +data.lng);
                         infowindow.open(map, marker);
+                        marker.setIcon('http://google-maps-icons.googlecode.com/files/sailboat-tourism.png');
                     });
                 })(marker, data);
-            }
+            //}
             directionsDisplay.setMap(map);
 
             var onclick = function(){
@@ -219,6 +228,10 @@
                 }
             });
         }
+
+        setTimeout (function(){
+            location.reload();
+        }, 30000);
 
     </script>
 </body>
